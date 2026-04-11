@@ -66,8 +66,8 @@ body {
 }
 
 .logo img {
-  width: clamp(60px, 6vw, 90px);
-  height: clamp(60px, 6vw, 90px);
+  width: clamp(40px, 4vw, 56px);
+  height: clamp(40px, 4vw, 56px);
   object-fit: contain;
   mix-blend-mode: multiply;
 }
@@ -752,35 +752,13 @@ footer {
 
 .footer-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: clamp(24px, 4vw, 60px);
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 100px);
   padding: clamp(40px, 5vw, 70px) 0 clamp(32px, 4vw, 52px);
   align-items: start;
+  justify-items: center;
+  text-align: center;
 }
-
-.footer-brand {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-}
-
-.footer-logo {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  opacity: 0.9;
-  margin-bottom: 4px;
-  filter: brightness(10);
-}
-
-.footer-name {
-  color: var(--white);
-  font-weight: 600;
-  font-size: 17px;
-}
-
-.footer-tagline { font-size: 13px; opacity: 0.6; }
 
 .footer-section-title {
   color: var(--white);
@@ -791,7 +769,7 @@ footer {
   margin: 0 0 14px;
 }
 
-.footer-contacts { display: flex; flex-direction: column; gap: 10px; }
+.footer-contacts { display: flex; flex-direction: column; gap: 10px; align-items: center; }
 
 .footer-link {
   display: flex;
@@ -811,6 +789,7 @@ footer {
   gap: 5px;
   font-size: 13px;
   opacity: 0.7;
+  align-items: center;
 }
 
 .footer-requisites p { margin: 0; }
@@ -856,8 +835,7 @@ footer {
 .burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 @media (max-width: 1024px) {
-  .footer-inner { grid-template-columns: 1fr 1fr; }
-  .footer-brand { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 16px; }
+  .footer-inner { grid-template-columns: 1fr; gap: 28px; }
 }
 
 @media (max-width: 900px) {
@@ -931,7 +909,6 @@ footer {
   .yoo-btn { width: 100%; justify-content: center; }
 
   .footer-inner { grid-template-columns: 1fr; gap: 28px; }
-  .footer-brand { flex-direction: row; align-items: center; gap: 14px; }
 }
 
 @media (max-width: 420px) {

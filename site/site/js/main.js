@@ -3,18 +3,6 @@
  */
 
 // ═══════════════════════════════════════════
-// АВТОСКРОЛЛ К ОПЛАТЕ ПРИ ЗАГРУЗКЕ
-// ═══════════════════════════════════════════
-window.addEventListener('load', () => {
-  const payment = document.querySelector('#payment');
-  if (payment) {
-    setTimeout(() => {
-      payment.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 400);
-  }
-});
-
-// ═══════════════════════════════════════════
 // БУРГЕР-МЕНЮ
 // ═══════════════════════════════════════════
 const burgerBtn  = document.getElementById('burger-btn');
@@ -74,10 +62,17 @@ phoneInputEl.addEventListener('blur', function () {
 // ═══════════════════════════════════════════
 const DIPLOMAS = [
   { img: 'images/diplomas/diploma_1.png', title: 'Диплом магистра с отличием — ПсковГУ, психолого-педагогическое образование, 2025' },
-  { img: 'images/diplomas/diploma_2.png', title: 'Диплом о профессиональной переподготовке — Московский институт психологии, психолог-консультант, 2025' },
   { img: 'images/diplomas/diploma_3.png', title: 'Диплом о профессиональной переподготовке — Институт прикладной психологии, психолог-тренер, 340 часов, 2025' },
   { img: 'images/diplomas/diploma_4.png', title: 'Сертификаты — Психотерапия взросления: введение и воссоединение с чувствами, 2024' },
   { img: 'images/diplomas/diploma_5.png', title: 'Сертификаты — Эмоциональный интеллект в психотерапии взросления и терапия, центрированная на чувствах, 2024' },
+  { img: 'images/diploma_1/file-001.png', title: 'Диплом 1' },
+  { img: 'images/diploma_2/file-001.png', title: 'Диплом 2 — файл 1' },
+  { img: 'images/diploma_2/file-002.png', title: 'Диплом 2 — файл 2' },
+  { img: 'images/diploma_3/file-001.png', title: 'Диплом 3' },
+  { img: 'images/diploma_4/file-001.png', title: 'Диплом 4' },
+  { img: 'images/diploma_5/file-001.png', title: 'Диплом 5' },
+  { img: 'images/diploma_7/file-001.png', title: 'Диплом 7' },
+  { img: 'images/diploma_8/file-001.png', title: 'Диплом 8' },
 ];
 
 const diplomaScrollEl = document.getElementById('diplomas-scroll');
